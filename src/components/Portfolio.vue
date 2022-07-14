@@ -79,7 +79,7 @@ export default {
         image: require("../images/storyIdeaGenerator.png"),
         repolink: "https://github.com/Holgermueller/story-idea-generator",
         tech: "Gatsby, Material-Ui",
-        demoLink: "https://confident-tesla-1e3118.netlify.app/",
+        demoLink: "https://holgermueller.github.io/story-idea-generator/",
       },
       {
         title: "Time and Temp",
