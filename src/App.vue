@@ -14,6 +14,9 @@
         <span class="mr-2">Portfolio</span>
       </v-btn>
       <v-btn text>
+        <span class="mr-2">Education</span>
+      </v-btn>
+      <v-btn text>
         <span class="mr-2">Connect</span>
       </v-btn>
     </v-app-bar>

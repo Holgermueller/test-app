@@ -5,7 +5,7 @@
         <v-row align="center" justify="center">
           <v-img
             class="pic"
-            src=""
+            src="../images/profile.png"
             alt="Pic_of_Me"
             max-height="300"
             max-width="300"
