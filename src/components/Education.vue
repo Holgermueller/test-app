@@ -1,5 +1,5 @@
 <template>
-  <div id="education">
+  <div id="Education">
     <h1 class="section-header">Education</h1>
   </div>
 </template>

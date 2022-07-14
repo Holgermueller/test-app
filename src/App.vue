@@ -2,23 +2,16 @@
   <v-app>
     <v-app-bar app color="#31708e" dark>
       <div class="d-flex align-center">
-        <h1>Holger Mueller</h1>
+        <h1 class="brand" @click.prevent="scrollToTop">Holger Mueller</h1>
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn text>
-        <span class="mr-2">About</span>
-      </v-btn>
-      <v-btn text>
-        <span class="mr-2">Portfolio</span>
-      </v-btn>
-      <v-btn text>
-        <span class="mr-2">Education</span>
-      </v-btn>
-      <v-btn text>
-        <span class="mr-2">Connect</span>
-      </v-btn>
+      <div v-for="(section, index) in sections" :key="index">
+        <v-btn :id="index" :href="section.link" text block>
+          <span class="mr-2"> {{ section.title }}</span>
+        </v-btn>
+      </div>
     </v-app-bar>
 
     <v-main>
@@ -41,7 +34,32 @@ export default {
   },
 
   data: () => ({
-    //
+    sections: [
+      {
+        title: "About",
+        icon: "mdi mdi-book-open-page-variant",
+        link: "#About",
+      },
+      { title: "Portfolio", icon: "mdi mdi-iframe", link: "#Portfolio" },
+      {
+        title: "Education",
+        icon: "",
+        link: "#Education",
+      },
+      { title: "Connect", icon: "mdi mdi-laptop-mac", link: "#Connect" },
+    ],
   }),
+
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
 };
 </script>
+
+<style scoped>
+.brand:hover {
+  cursor: pointer;
+}
+</style>

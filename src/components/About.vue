@@ -25,7 +25,8 @@
       Republic of Korea, France, Canada, and Italy. As far as reading goes, I've
       recently rediscovered my love of Science Ficiton and fantasy, and I've
       always had an affinty for Marvel Comics. With movies, I tend to enjoy
-      comedies over other genres.
+      comedies over other genres. And with music, I'm fond of many genres, but
+      jazz and punk rock tend to be my favorites.
     </p>
   </div>
 </template>
