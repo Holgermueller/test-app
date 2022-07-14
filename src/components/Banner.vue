@@ -1,5 +1,5 @@
 <template>
-  <div id="banner">
+  <div id="Banner">
     <v-card tile elevation="0" class="banner-content">
       <v-card-text>
         <v-row align="center" justify="center">
@@ -40,9 +40,8 @@
 </template>
 
 <style scoped>
-#banner {
+#Banner {
   z-index: 1;
-  margin-top: 3rem;
   width: 100%;
 }
 .banner-content {

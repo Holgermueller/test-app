@@ -48,6 +48,7 @@ export default {
 <style scoped>
 .section-header {
   text-align: center;
+  padding-top: 4%;
 }
 .education-card {
   width: 55%;

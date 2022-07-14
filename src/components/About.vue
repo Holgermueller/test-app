@@ -35,6 +35,7 @@
 .about {
   justify-content: center;
   margin: auto;
+  padding-top: 2%;
 }
 .section-header {
   text-align: center;
