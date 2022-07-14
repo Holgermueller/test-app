@@ -3,6 +3,7 @@
     <Banner />
     <About class="page-section" />
     <Portfolio class="page-section" />
+    <Education class="page-section" />
     <Connect class="page-section" />
   </div>
 </template>
@@ -11,6 +12,7 @@
 import Banner from "./Banner.vue";
 import About from "./About.vue";
 import Portfolio from "./Portfolio.vue";
+import Education from "./Education.vue";
 import Connect from "./Connect.vue";
 
 export default {
@@ -20,6 +22,7 @@ export default {
     Banner,
     About,
     Portfolio,
+    Education,
     Connect,
   },
 };
