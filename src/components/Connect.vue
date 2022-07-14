@@ -37,7 +37,7 @@
               Your message:
               <textarea
                 v-model="Message"
-                class="form-control col-12"
+                class="form-control col-12 message"
                 rows="5"
                 name="message"
               ></textarea>
@@ -104,7 +104,7 @@ export default {
   padding-left: 8px;
   z-index: 1;
 }
-.text-field {
+.message {
   margin: 8px auto;
   border: 1px solid darkgray;
   border-radius: 15px;
