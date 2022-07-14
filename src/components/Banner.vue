@@ -1,6 +1,6 @@
 <template>
   <div id="banner">
-    <v-card tile class="banner-content">
+    <v-card tile elevation="0" class="banner-content">
       <v-card-text>
         <v-row align="center" justify="center">
           <v-img
@@ -14,7 +14,7 @@
 
         <div class="name display-3">Holger Mueller</div>
         <div class="description subheader">
-          Front-End Developer | Problem-Solver
+          Full-stack Developer | Problem-Solver
         </div>
       </v-card-text>
       <v-card-actions class="links">

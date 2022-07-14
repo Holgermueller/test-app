@@ -2,7 +2,7 @@
   <div id="home">
     <Banner />
     <About class="page-section" />
-    <Portfolio class="page-section" />
+    <!-- <Portfolio class="page-section" /> -->
     <Education class="page-section" />
     <Connect class="page-section" />
   </div>
@@ -11,7 +11,7 @@
 <script>
 import Banner from "./Banner.vue";
 import About from "./About.vue";
-import Portfolio from "./Portfolio.vue";
+//import Portfolio from "./Portfolio.vue";
 import Education from "./Education.vue";
 import Connect from "./Connect.vue";
 
@@ -21,7 +21,7 @@ export default {
   components: {
     Banner,
     About,
-    Portfolio,
+    // Portfolio,
     Education,
     Connect,
   },

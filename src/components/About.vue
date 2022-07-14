@@ -7,14 +7,15 @@
     </p>
     <p class="about-paragraph">
       Originally from Upstate New York, I moved to Batesville, Arkansas halfway
-      through 2022 so my wife could pursue her dream job. Prior to Arkansas, I
-      lived in Minneapolis, MN, where I endured the winters for seven years.
-      During that time, I earned my full-stack web developer certificate through
-      the University of Minnesota's College of Continuing Education. Through
-      that program, I've become proficient in Javascript, jQuery, React, VueJs,
-      Google's Cloud Firebase, MongoDB, and a few other technologies. My plan of
-      attack on projects is to break the overall task into the smallest
-      manageable pieces and build up from there.
+      through 2022 so my wife could pursue her dream job, working at a small
+      liberal arts college. Prior to Arkansas, I lived in Minneapolis, MN, where
+      I endured the winters for seven years. During that time, I earned my
+      full-stack web developer certificate through the University of Minnesota's
+      College of Continuing Education. Through that program, I've become
+      proficient in Javascript, jQuery, React, VueJs, Google's Cloud Firebase,
+      MongoDB, and a few other technologies. My plan of attack on projects is to
+      break the overall task into the smallest manageable pieces and build up
+      from there.
     </p>
     <p class="about-paragraph">
       When not coding, I enjoy reading and writing, watching movies, hiking, and
