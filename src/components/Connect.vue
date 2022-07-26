@@ -51,6 +51,10 @@
               Send It!
             </button>
           </form>
+          <small
+            >Form powered by
+            <a href="https://formspree.io/" target="_blank">Formspree</a>
+          </small>
         </v-card-text>
       </v-card>
     </div>
@@ -77,6 +81,7 @@ export default {
   background-color: #8fc1e3;
   padding-top: 4%;
   padding-bottom: 7%;
+  margin-bottom: 0;
 }
 .section-header {
   text-align: center;
@@ -84,9 +89,7 @@ export default {
 }
 .form-card {
   width: 55%;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto;
   background-color: #f7f9fb;
 }
 .form-container {
@@ -121,6 +124,9 @@ export default {
 }
 .submit:disabled {
   background-color: lightgrey;
+}
+a {
+  text-decoration: none;
 }
 @media (min-width: 360px) and (max-width: 450px) {
   .connection-name {
