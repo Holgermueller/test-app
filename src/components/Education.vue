@@ -1,15 +1,21 @@
 <template>
   <div id="Education">
-    <h1 class="section-header">Education</h1>
-    <div v-for="(item, index) in education" :key="index">
-      <v-card class="education-card" tile>
-        <v-card-title>
-          {{ item.school }}
-        </v-card-title>
-        <v-card-text>
-          {{ item.program }}
-        </v-card-text>
-      </v-card>
+    <div class="image">
+      <div class="caption">
+        <span class="border">EDUCATION</span>
+      </div>
+    </div>
+    <div class="education-container">
+      <div v-for="(item, index) in education" :key="index">
+        <v-card class="education-card" tile>
+          <v-card-title>
+            {{ item.school }}
+          </v-card-title>
+          <v-card-text>
+            {{ item.program }}
+          </v-card-text>
+        </v-card>
+      </div>
     </div>
   </div>
 </template>
@@ -46,9 +52,34 @@ export default {
 </script>
 
 <style scoped>
-.section-header {
+#education {
+  top: 0;
+}
+.image {
+  /* image by Pixabay via Pexels */
+  background-image: url("../images/education.png");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.caption {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 50%;
   text-align: center;
-  padding-top: 4%;
+  color: black;
+}
+.caption span.border {
+  background-color: white;
+  color: black;
+  width: fit-content;
+  font-size: 25px;
+  padding: 18px;
+  letter-spacing: 10px;
+}
+.education-container {
+  margin: 5% auto;
 }
 .education-card {
   width: 55%;

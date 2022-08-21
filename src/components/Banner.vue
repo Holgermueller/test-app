@@ -43,6 +43,7 @@
 #Banner {
   z-index: 1;
   width: 100%;
+  bottom: 0;
 }
 .banner-content {
   background-color: #f7f9fb !important;

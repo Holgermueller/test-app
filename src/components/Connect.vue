@@ -1,72 +1,27 @@
 <template>
   <div id="Connect">
-    <h1 class="section-header">Connect</h1>
+    <div class="image">
+      <div class="caption">
+        <span class="border">CONNECT</span>
+      </div>
+    </div>
 
-    <SocialConnects />
+    <div class="connection-section">
+      <SocialConnects />
 
-    <div class="form-container">
-      <v-card class="form-card">
-        <v-card-title>
-          <h3>Or drop me a message. I'll respond faster this way.</h3>
-        </v-card-title>
-        <v-card-text>
-          <form
-            action="https://formspree.io/f/myyoqqvy"
-            method="POST"
-            class="form"
-          >
-            <label
-              >Name:
-              <input
-                v-model="Name"
-                type="text"
-                name="name"
-                class="form-field"
-              />
-            </label>
-            <label>
-              Your email:
-              <input
-                v-model="Email"
-                type="email"
-                name="email"
-                class="form-field"
-              />
-            </label>
-            <label>
-              Your message:
-              <textarea
-                v-model="Message"
-                class="form-control col-12 message"
-                rows="5"
-                name="message"
-              ></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button
-              type="submit"
-              class="submit"
-              :disabled="Name === '' || Email === '' || Message === ''"
-            >
-              Send It!
-            </button>
-          </form>
-          <small
-            >Form powered by
-            <a href="https://formspree.io/" target="_blank">Formspree</a>
-          </small>
-        </v-card-text>
-      </v-card>
+      <ConnectForm />
     </div>
   </div>
 </template>
 
 <script>
 import SocialConnects from "./SocialConnects.vue";
+import ConnectForm from "./ConnectForm.vue";
 
 export default {
   components: {
     SocialConnects,
+    ConnectForm,
   },
   data: () => ({
     Name: "",
@@ -78,55 +33,35 @@ export default {
 
 <style scoped>
 #Connect {
-  background-color: #8fc1e3;
-  padding-top: 4%;
+  background-color: rgb(49, 112, 142, 0.3);
   padding-bottom: 7%;
   margin-bottom: 0;
 }
-.section-header {
+.image {
+  /* image by Pixabay via Pexels */
+  background-image: url("../images/connect.png");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.caption {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 50%;
   text-align: center;
-  margin-top: 7%;
+  color: black;
 }
-.form-card {
-  width: 55%;
-  margin: 1rem auto;
-  background-color: #f7f9fb;
+.caption span.border {
+  background-color: white;
+  color: black;
+  width: fit-content;
+  font-size: 25px;
+  padding: 18px;
+  letter-spacing: 10px;
 }
-.form-container {
-  margin-top: 4rem;
-}
-.button {
-  margin-bottom: 10px;
-}
-.form-field {
-  width: 100%;
-  height: 50px;
-  border: 1px solid darkgray;
-  border-radius: 15px;
-  margin: 8px auto;
-  padding-left: 8px;
-  z-index: 1;
-}
-.message {
-  margin: 8px auto;
-  border: 1px solid darkgray;
-  border-radius: 15px;
-}
-.submit {
-  width: 100%;
-  height: 50px;
-  margin: 8px auto;
-  background-color: #31708e;
-  color: #f7f9fb;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 15px;
-}
-.submit:disabled {
-  background-color: lightgrey;
-}
-a {
-  text-decoration: none;
+.connection-section {
+  margin: 5% auto;
 }
 @media (min-width: 360px) and (max-width: 450px) {
   .connection-name {

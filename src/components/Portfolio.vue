@@ -1,42 +1,48 @@
 <template>
   <div id="Portfolio">
-    <h1 class="section-header">Portfolio</h1>
+    <div class="image">
+      <div class="caption">
+        <span class="border">PORTFOLIO</span>
+      </div>
+    </div>
 
-    <v-container class="portfolio-container" fluid>
-      <v-layout row wrap>
-        <v-flex
-          xs12
-          sm12
-          md6
-          lg4
-          xl4
-          v-for="(Project, index) in Projects"
-          :key="index"
-        >
-          <v-hover v-slot:default="{ hover }">
-            <v-card class="project-card" tile :elevation="hover ? 12 : 2">
-              <v-img class="card-image" :src="Project.image"></v-img>
-              <v-card-title>
-                <div>{{ Project.title }}</div>
-              </v-card-title>
-              <v-card-text>
-                <p>{{ Project.description }}</p>
-                <p>Built with: {{ Project.tech }}</p>
-              </v-card-text>
-              <v-card-actions>
-                <a :href="Project.demoLink" target="_blank" class="demo">
-                  <span class="mdi mdi-laptop-mac"></span>See the demo
-                </a>
-                <v-spacer></v-spacer>
-                <a :href="Project.repolink" target="_blank" class="repo">
-                  <span class="mdi mdi-github"></span>See the repo
-                </a>
-              </v-card-actions>
-            </v-card>
-          </v-hover>
-        </v-flex>
-      </v-layout>
-    </v-container>
+    <div class="portfolio-container">
+      <v-container class="portfolio" fluid>
+        <v-layout row wrap>
+          <v-flex
+            xs12
+            sm12
+            md6
+            lg4
+            xl4
+            v-for="(Project, index) in Projects"
+            :key="index"
+          >
+            <v-hover v-slot:default="{ hover }">
+              <v-card class="project-card" tile :elevation="hover ? 12 : 2">
+                <v-img class="card-image" :src="Project.image"></v-img>
+                <v-card-title>
+                  <div>{{ Project.title }}</div>
+                </v-card-title>
+                <v-card-text>
+                  <p>{{ Project.description }}</p>
+                  <p>Built with: {{ Project.tech }}</p>
+                </v-card-text>
+                <v-card-actions>
+                  <a :href="Project.demoLink" target="_blank" class="demo">
+                    <span class="mdi mdi-laptop-mac"></span>See the demo
+                  </a>
+                  <v-spacer></v-spacer>
+                  <a :href="Project.repolink" target="_blank" class="repo">
+                    <span class="mdi mdi-github"></span>See the repo
+                  </a>
+                </v-card-actions>
+              </v-card>
+            </v-hover>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </div>
   </div>
 </template>
 
@@ -114,15 +120,37 @@ export default {
 
 <style scoped>
 #Portfolio {
-  background-color: #8fc1e3;
+  background-color: rgb(49, 112, 142, 0.3);
   width: 100%;
-  padding-bottom: 7%;
 }
-.section-header {
+.image {
+  /* image by Pixabay via Pexels */
+  background-image: url("../images/portfoliobanner.png");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.caption {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 50%;
   text-align: center;
-  padding-top: 7%;
+  color: black;
+}
+.caption span.border {
+  background-color: #31708e;
+  color: white;
+  width: fit-content;
+  font-size: 25px;
+  padding: 18px;
+  letter-spacing: 10px;
 }
 .portfolio-container {
+  padding: 4%;
+}
+.portfolio {
+  margin: auto;
   width: 75%;
 }
 .project-card {

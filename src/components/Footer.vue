@@ -1,5 +1,5 @@
 <template>
-  <div id="footer">
+  <div id="Footer">
     <v-card class="footer" tile>
       <div class="subtitle-2">
         Copyright &copy; 2019 - {{ new Date().getFullYear() }} Holger Mueller |
@@ -14,16 +14,15 @@
 </template>
 
 <style scoped>
-#footer {
+#Footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: center;
-  padding-top: 2%;
 }
 .footer {
   background-color: #31708e !important;
   color: white;
+  padding: 4px;
 }
 .link {
   text-decoration: none;

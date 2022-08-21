@@ -1,10 +1,10 @@
 <template>
   <div id="home">
     <Banner />
-    <About class="page-section" />
-    <Portfolio class="page-section" />
-    <Education class="page-section" />
-    <Connect class="page-section" />
+    <About />
+    <Portfolio />
+    <Education />
+    <Connect />
     <TopButton />
   </div>
 </template>
@@ -30,10 +30,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.page-section {
-  margin-top: 5rem;
-  margin-bottom: 4rem;
-}
-</style>
