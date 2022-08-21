@@ -31,6 +31,7 @@
         <v-spacer></v-spacer>
         <a
           href="https://docs.google.com/document/d/1ECnxm-wbN3Wsn2j235rghJSNboBEsaZba_TSgauNVQ0/edit"
+          target="_blank"
         >
           <h1 class="mdi mdi-file-download-outline resume link"></h1>
         </a>

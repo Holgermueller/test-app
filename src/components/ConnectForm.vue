@@ -72,7 +72,7 @@ export default {
 .form-card {
   width: 55%;
   margin: 1rem auto;
-  background-color: #f7f9fb;
+  background-color: rgb(49, 112, 142, 0.3);
 }
 .form-container {
   margin-top: 4rem;
@@ -111,6 +111,7 @@ textarea {
 }
 .submit:disabled {
   background-color: lightgrey;
+  color: lightgray;
 }
 a {
   text-decoration: none;

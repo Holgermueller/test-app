@@ -52,8 +52,8 @@ export default {
 </script>
 
 <style scoped>
-#education {
-  top: 0;
+#Education {
+  background-color: rgb(49, 112, 142, 0.3);
 }
 .image {
   /* image by Pixabay via Pexels */
@@ -79,7 +79,7 @@ export default {
   letter-spacing: 10px;
 }
 .education-container {
-  margin: 5% auto;
+  padding: 5%;
 }
 .education-card {
   width: 55%;

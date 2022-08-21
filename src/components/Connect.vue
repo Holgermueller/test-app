@@ -33,7 +33,6 @@ export default {
 
 <style scoped>
 #Connect {
-  background-color: rgb(49, 112, 142, 0.3);
   padding-bottom: 7%;
   margin-bottom: 0;
 }
