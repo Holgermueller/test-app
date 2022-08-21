@@ -41,7 +41,7 @@ export default {
         link: "#About",
       },
       { title: "Portfolio", icon: "mdi mdi-iframe", link: "#Portfolio" },
-      { title: "Skills", icon: "mdi mdi-arrow-up", link: "#Skills" },
+      //{ title: "Skills", icon: "mdi mdi-arrow-up", link: "#Skills" },
       {
         title: "Education",
         icon: "",
