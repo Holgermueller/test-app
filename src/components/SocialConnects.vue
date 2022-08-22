@@ -1,22 +1,29 @@
 <template>
   <div id="socialConnects">
     <v-card class="connections-display">
-      <v-container>
-        <v-row>
-          <v-col v-for="(connection, index) in connections" :key="index">
-            <v-btn
-              :href="connection.link"
-              target="_blank"
-              class="social-link"
-              text
-              block
-            >
-              <v-icon> {{ connection.connection_class }}</v-icon>
-              <span class="connection-name">{{ connection.name }}</span>
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-container>
+      <v-card-title>
+        <h2>You can find me on these sites:</h2>
+      </v-card-title>
+      <v-card-text>
+        <hr />
+        <v-container>
+          <v-row>
+            <v-col v-for="(connection, index) in connections" :key="index">
+              <v-btn
+                :href="connection.link"
+                target="_blank"
+                class="social-link"
+                text
+                block
+                x-large
+              >
+                <v-icon> {{ connection.connection_class }}</v-icon>
+                <span class="connection-name">{{ connection.name }}</span>
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-card-text>
     </v-card>
   </div>
 </template>
@@ -31,6 +38,11 @@ export default {
         name: "Github",
         connection_class: "mdi mdi-github",
         link: "https://github.com/Holgermueller",
+      },
+      {
+        name: "Stack Overflow",
+        connection_class: "mdi mdi-stack-overflow",
+        link: "https://stackoverflow.com/users/9111512/holger-mueller",
       },
       {
         name: "LinkedIn",
