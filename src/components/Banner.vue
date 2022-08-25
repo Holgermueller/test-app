@@ -12,9 +12,9 @@
           ></v-img>
         </v-row>
 
-        <div class="name display-3">Holger Mueller</div>
-        <div class="description subheader">
-          Full-stack Developer | Problem-Solver
+        <div class="name display-4">Holger Mueller</div>
+        <div class="description title">
+          UX/UI Designer | Full-stack Developer | Problem-Solver
         </div>
       </v-card-text>
       <v-card-actions class="links">

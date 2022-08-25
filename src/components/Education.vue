@@ -9,10 +9,14 @@
       <div v-for="(item, index) in education" :key="index">
         <v-card class="education-card" tile>
           <v-card-title>
-            {{ item.school }}
+            <h1 class="headline">
+              {{ item.school }}
+            </h1>
           </v-card-title>
           <v-card-text>
-            {{ item.program }}
+            <h2 class="title">
+              {{ item.program }}
+            </h2>
           </v-card-text>
         </v-card>
       </div>

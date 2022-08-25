@@ -9,11 +9,50 @@
     <div class="skills-section">
       <v-card class="skills-card">
         <v-card-text>
-          <div class="list">
-            <ul v-for="(language, i) in languages" :key="i">
-              <li>{{ language }}</li>
-            </ul>
-          </div>
+          <v-container>
+            <v-row no-gutters>
+              <v-col>
+                <v-card elevation="0">
+                  <v-card-title>
+                    <h1>Design</h1>
+                  </v-card-title>
+                  <v-card-text>
+                    <hr />
+                    <ul v-for="(item, i) in designItems" :key="i">
+                      <li>{{ item }}</li>
+                    </ul>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+              <v-col>
+                <v-card elevation="0">
+                  <v-card-title>
+                    <h1>Front End</h1>
+                  </v-card-title>
+                  <v-card-text>
+                    <hr />
+                    <ul v-for="(language, i) in languages" :key="i">
+                      <li>{{ language }}</li>
+                    </ul>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+              <v-col>
+                <v-card elevation="0">
+                  <v-card-title>
+                    <h1>Back End</h1>
+                  </v-card-title>
+
+                  <v-card-text>
+                    <hr />
+                    <ul v-for="(item, i) in backendItems" :key="i">
+                      <li>{{ item }}</li>
+                    </ul>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-card-text>
       </v-card>
     </div>
@@ -24,8 +63,19 @@
 export default {
   name: "MySkills",
   data: () => ({
+    designItems: [
+      "Pen & Paper",
+      "Figma",
+      "Whatever drawing utensil I can get my hands on!",
+    ],
     languages: ["javascript", "html", "css", "sql", "java", "python"],
-    frameworks: ["react", "vue", "spring boot"],
+    frontendItems: ["react", "vue", "spring boot"],
+    backendItems: [
+      "MongoDB",
+      "Firebase/Cloud Firestore",
+      "Thunder Client",
+      "MySQL",
+    ],
   }),
 };
 </script>
@@ -58,7 +108,9 @@ export default {
   width: 75%;
   margin: 5% auto;
 }
+
 .list {
   width: 33%;
+  margin: auto;
 }
 </style>

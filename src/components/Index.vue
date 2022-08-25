@@ -3,7 +3,7 @@
     <Banner />
     <About />
     <Portfolio />
-    <!-- <Skills /> -->
+    <Skills />
     <Education />
     <Connect />
     <TopButton />
@@ -14,7 +14,7 @@
 import Banner from "./Banner.vue";
 import About from "./About.vue";
 import Portfolio from "./Portfolio.vue";
-//import Skills from "./Skills.vue";
+import Skills from "./Skills.vue";
 import Education from "./Education.vue";
 import Connect from "./Connect.vue";
 import TopButton from "./TopButton.vue";
@@ -26,7 +26,7 @@ export default {
     Banner,
     About,
     Portfolio,
-    // Skills,
+    Skills,
     Education,
     Connect,
     TopButton,

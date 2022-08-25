@@ -6,7 +6,7 @@
       </div>
     </div>
 
-    <div class="about-content">
+    <div class="about-content body-1">
       <p class="about-paragraph">
         I'm a full-stack front-end developer living in Batesville, Arkansas.
       </p>
