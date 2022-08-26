@@ -2,8 +2,9 @@
   <div id="home">
     <Banner />
     <About />
-    <Portfolio />
+
     <Skills />
+    <Portfolio />
     <Education />
     <Connect />
     <TopButton />

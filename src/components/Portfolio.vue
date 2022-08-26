@@ -119,10 +119,6 @@ export default {
 </script>
 
 <style scoped>
-#Portfolio {
-  background-color: rgb(49, 112, 142, 0.3);
-  width: 100%;
-}
 .image {
   /* image by Pixabay via Pexels */
   background-image: url("../images/portfoliobanner.png");

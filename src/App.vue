@@ -40,8 +40,9 @@ export default {
         icon: "mdi mdi-book-open-page-variant",
         link: "#About",
       },
+      { title: "Skills", icon: "mdi mdi-arrow-up", link: "#Skills" },
       { title: "Portfolio", icon: "mdi mdi-iframe", link: "#Portfolio" },
-      //{ title: "Skills", icon: "mdi mdi-arrow-up", link: "#Skills" },
+
       {
         title: "Education",
         icon: "",

@@ -7,19 +7,21 @@
     </div>
 
     <div class="skills-section">
-      <v-card class="skills-card">
+      <v-card class="skills-card" elevation="0">
         <v-card-text>
           <v-container>
             <v-row no-gutters>
               <v-col>
                 <v-card elevation="0">
                   <v-card-title>
-                    <h1>Design</h1>
+                    <h1>UX/UI</h1>
                   </v-card-title>
                   <v-card-text>
                     <hr />
                     <ul v-for="(item, i) in designItems" :key="i">
-                      <li>{{ item }}</li>
+                      <li class="body-1">
+                        {{ item }}
+                      </li>
                     </ul>
                   </v-card-text>
                 </v-card>
@@ -27,12 +29,14 @@
               <v-col>
                 <v-card elevation="0">
                   <v-card-title>
-                    <h1>Front End</h1>
+                    <h1>Frontend</h1>
                   </v-card-title>
                   <v-card-text>
                     <hr />
-                    <ul v-for="(language, i) in languages" :key="i">
-                      <li>{{ language }}</li>
+                    <ul v-for="(item, i) in frontendItems" :key="i">
+                      <li class="body-1">
+                        {{ item }}
+                      </li>
                     </ul>
                   </v-card-text>
                 </v-card>
@@ -40,13 +44,15 @@
               <v-col>
                 <v-card elevation="0">
                   <v-card-title>
-                    <h1>Back End</h1>
+                    <h1>Backend</h1>
                   </v-card-title>
 
                   <v-card-text>
                     <hr />
                     <ul v-for="(item, i) in backendItems" :key="i">
-                      <li>{{ item }}</li>
+                      <li class="body-1">
+                        {{ item }}
+                      </li>
                     </ul>
                   </v-card-text>
                 </v-card>
@@ -68,19 +74,36 @@ export default {
       "Figma",
       "Whatever drawing utensil I can get my hands on!",
     ],
-    languages: ["javascript", "html", "css", "sql", "java", "python"],
-    frontendItems: ["react", "vue", "spring boot"],
+    frontendItems: [
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Git",
+      "ReactJS",
+      "Vuejs",
+      "MaterialUI",
+      "Vuetify",
+      "Bootstrap",
+    ],
     backendItems: [
       "MongoDB",
       "Firebase/Cloud Firestore",
       "Thunder Client",
       "MySQL",
+      "ExpressJS",
+      "Spring Boot",
+      "Flask",
     ],
+    devTools: ["VS Code", "Github", "Terminal"],
   }),
 };
 </script>
 
 <style scoped>
+#Skills {
+  background-color: rgb(49, 112, 142, 0.3);
+  padding-block: 5%;
+}
 .image {
   /* Photo by Nemuel Sereti: https://www.pexels.com/photo/programming-language-on-a-screen-6424586/ via Pexels */
   background-image: url("../images/skills.png");
@@ -112,5 +135,9 @@ export default {
 .list {
   width: 33%;
   margin: auto;
+}
+ul {
+  list-style: none;
+  margin-top: 8px;
 }
 </style>
