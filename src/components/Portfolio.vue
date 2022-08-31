@@ -88,12 +88,13 @@ export default {
         demoLink: "https://holgermueller.github.io/story-idea-generator/",
       },
       {
-        title: "Time and Temp",
-        description: "A weathr app with location search.",
-        image: require("../images/timetempshot.png"),
-        repolink: "https://github.com/Holgermueller/TimeandTemp",
-        tech: "Handlebars, ExpressJs, LessCSS, Nodemon",
-        demoLink: "https://holgerweatherapp.herokuapp.com/",
+        title: "Weather App",
+        description:
+          "A mobile responsive weather app with location search, which meets accessability standards.",
+        image: require("../images/weatherapp.png"),
+        repolink: "https://github.com/Holgermueller/weatherapp",
+        tech: "VueJS, Vuex, OpenWeather API",
+        demoLink: "https://holgermueller.github.io/weatherapp/",
       },
       {
         title: "Inspirational Thought Generator",
