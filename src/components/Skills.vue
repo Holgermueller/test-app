@@ -72,6 +72,7 @@ export default {
     designItems: [
       "Pen & Paper",
       "Figma",
+      "Adobe XD",
       "Whatever drawing utensil I can get my hands on!",
     ],
     frontendItems: [

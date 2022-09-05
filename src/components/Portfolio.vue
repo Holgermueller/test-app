@@ -53,6 +53,14 @@ export default {
   data: () => ({
     Projects: [
       {
+        title: "QR Coder",
+        description: "A static app that generates downloadable qr codes.",
+        image: require("../images/qrcode.png"),
+        repolink: "https://github.com/Holgermueller/qrcoder",
+        tech: "Vanills JS, Bootstrap, Three JS, QRCode.js",
+        demoLink: "https://holgermueller.github.io/qrcoder/",
+      },
+      {
         title: "Trip Scheduler",
         description: "A way to keep track of any upcoming getaways.",
         image: require("../images/scheduler.png"),
@@ -106,14 +114,14 @@ export default {
         tech: "jQuery, Grunt, Nodemon",
         demoLink: "https://inspirationalthoughtgenerator.herokuapp.com/",
       },
-      {
-        title: "Friend Finder",
-        description: "A friend-finding app/ poor-man's dating app.",
-        image: require("../images/friendfinder.png"),
-        repolink: "https://github.com/Holgermueller/Friend_Finder",
-        tech: "Expressjs, Nodemon, jQuery",
-        demoLink: "https://friendfinderap.herokuapp.com/",
-      },
+      // {
+      //   title: "Friend Finder",
+      //   description: "A friend-finding app/ poor-man's dating app.",
+      //   image: require("../images/friendfinder.png"),
+      //   repolink: "https://github.com/Holgermueller/Friend_Finder",
+      //   tech: "Expressjs, Nodemon, jQuery",
+      //   demoLink: "https://friendfinderap.herokuapp.com/",
+      // },
     ],
   }),
 };
