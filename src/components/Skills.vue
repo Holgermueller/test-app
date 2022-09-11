@@ -92,8 +92,6 @@ export default {
       "Thunder Client",
       "MySQL",
       "ExpressJS",
-      "Spring Boot",
-      "Flask",
     ],
     devTools: ["VS Code", "Github", "Terminal"],
   }),
