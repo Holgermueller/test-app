@@ -62,8 +62,8 @@ export default {
       },
       {
         name: "Resume",
-        link: "https://docs.google.com/document/d/1ECnxm-wbN3Wsn2j235rghJSNboBEsaZba_TSgauNVQ0/edit",
-        icon: "mdi mdi-file-download-outline",
+        link: "https://holgermueller.github.io/Resume/",
+        icon: "mdi mdi-file",
       },
     ],
   }),
