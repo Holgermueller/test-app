@@ -3,7 +3,7 @@
     <v-app-bar v-if="$vuetify.breakpoint.mobile" app color="#31708e" dark>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <div class="align-center">
-        <h1 class="brand">Holger Mueller</h1>
+        <h1 class="brand" @click.prevent="scrollToTop">Holger Mueller</h1>
       </div>
     </v-app-bar>
 

@@ -8,7 +8,7 @@
     <div class="education-container">
       <div v-for="(item, index) in education" :key="index">
         <v-card class="education-card" tile>
-          <v-card-title>
+          <v-card-title class="card-title">
             <h1 class="headline">
               {{ item.school }}
             </h1>
@@ -59,6 +59,7 @@ export default {
 <style scoped>
 #Education {
   background-color: rgb(49, 112, 142, 0.3);
+  white-space: break-spaces;
 }
 .image {
   /* image by Pixabay via Pexels */
