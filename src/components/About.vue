@@ -47,8 +47,8 @@
   /* image by Pixabay via Pexels */
   background-image: url("../images/book.png");
   background-size: cover;
-  height: 500px;
   width: 100%;
+  height: 500px;
 }
 .caption {
   width: 100%;
