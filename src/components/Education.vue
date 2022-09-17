@@ -30,6 +30,7 @@ export default {
 
   data: () => ({
     education: [
+      { school: "Google", program: "UX Design Certificate" },
       {
         school: "freeCodeCamp",
         program: "Javascript Algorithms and Data Structures",

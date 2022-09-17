@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
 
       <div v-for="(section, index) in sections" :key="index">
-        <v-btn :id="index" :href="section.link" text block>
+        <v-btn :id="index" :href="section.link" text>
           <span class="mr-2"> {{ section.title }}</span>
         </v-btn>
       </div>

@@ -14,26 +14,22 @@
 
         <div class="name display-4">Holger Mueller</div>
         <div class="description title">
-          UX/UI Designer | Full-stack Developer | Problem-Solver
+          UX/UI Designer | Full-stack Developer | JAMstacker
         </div>
       </v-card-text>
       <v-card-actions class="links">
-        <v-container>
-          <v-row>
-            <v-col v-for="(link, index) in links" :key="index">
-              <v-btn
-                :href="link.link"
-                target="_blank"
-                class="link"
-                elevation="0"
-                fab
-                x-large
-              >
-                <v-icon>{{ link.icon }}</v-icon>
-              </v-btn>
-            </v-col>
-          </v-row>
-        </v-container>
+        <div class="social-links" v-for="(link, index) in links" :key="index">
+          <v-btn
+            :href="link.link"
+            target="_blank"
+            class="link"
+            elevation="0"
+            fab
+            x-large
+          >
+            <v-icon>{{ link.icon }}</v-icon>
+          </v-btn>
+        </div>
       </v-card-actions>
     </v-card>
   </div>
@@ -65,6 +61,11 @@ export default {
         link: "https://holgermueller.github.io/Resume/",
         icon: "mdi mdi-file",
       },
+      {
+        name: "Email",
+        link: "mailto:9jholger@gmail.com",
+        icon: "mdi mdi-email",
+      },
     ],
   }),
 };
@@ -91,8 +92,14 @@ export default {
 .subheader {
   padding: 1%;
 }
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+}
 .links {
-  width: 55%;
+  width: max-content;
   margin-left: auto;
   margin-right: auto;
 }

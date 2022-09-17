@@ -9,9 +9,9 @@
     <div class="skills-section">
       <v-card class="skills-card" elevation="0">
         <v-card-text>
-          <v-container>
-            <v-row no-gutters>
-              <v-col>
+          <v-container fluid>
+            <v-layout row wrap>
+              <v-flex xs12 sm12 md6 lg4 xl4>
                 <v-card elevation="0">
                   <v-card-title>
                     <h1>UX/UI</h1>
@@ -24,9 +24,9 @@
                       </li>
                     </ul>
                   </v-card-text>
-                </v-card>
-              </v-col>
-              <v-col>
+                </v-card></v-flex
+              >
+              <v-flex xs12 sm12 md6 lg4 xl4>
                 <v-card elevation="0">
                   <v-card-title>
                     <h1>Frontend</h1>
@@ -40,8 +40,8 @@
                     </ul>
                   </v-card-text>
                 </v-card>
-              </v-col>
-              <v-col>
+              </v-flex>
+              <v-flex xs12 sm12 md6 lg4 xl4>
                 <v-card elevation="0">
                   <v-card-title>
                     <h1>Backend</h1>
@@ -56,8 +56,8 @@
                     </ul>
                   </v-card-text>
                 </v-card>
-              </v-col>
-            </v-row>
+              </v-flex>
+            </v-layout>
           </v-container>
         </v-card-text>
       </v-card>
@@ -73,7 +73,13 @@ export default {
       "Pen & Paper",
       "Figma",
       "Adobe XD",
-      "Whatever drawing utensil I can get my hands on!",
+      "Defining user pain points",
+      "Empathizing with users by creating empathy maps, personas, user stories, and user journey maps",
+      "Crazy Eights",
+      "How Might We",
+      "Competitive audits",
+      "Wireframes and prototypes on paper and digitally",
+      "Considering accessibility at every point in the design process",
     ],
     frontendItems: [
       "Javascript",
@@ -82,8 +88,9 @@ export default {
       "Git",
       "ReactJS",
       "Vuejs",
-      "MaterialUI",
+      "Vuex",
       "Vuetify",
+      "MaterialUI",
       "Bootstrap",
     ],
     backendItems: [
@@ -92,6 +99,7 @@ export default {
       "Thunder Client",
       "MySQL",
       "ExpressJS",
+      "Markdown",
     ],
     devTools: ["VS Code", "Github", "Terminal"],
   }),
@@ -101,7 +109,7 @@ export default {
 <style scoped>
 #Skills {
   background-color: rgb(49, 112, 142, 0.3);
-  padding-block: 5%;
+  padding-bottom: 5%;
 }
 .image {
   /* Photo by Nemuel Sereti: https://www.pexels.com/photo/programming-language-on-a-screen-6424586/ via Pexels */
