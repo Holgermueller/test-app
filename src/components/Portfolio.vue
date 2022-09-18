@@ -105,14 +105,13 @@ export default {
         demoLink: "https://holgermueller.github.io/weatherapp/",
       },
       {
-        title: "Inspirational Thought Generator",
+        title: "ITG",
         description:
           "An app that gives users words of widsom to get them through the day. Thoughts can be shared on Twitter.",
-        image: require("../images/inspthghtgnrtr.png"),
-        repolink:
-          "https://github.com/Holgermueller/Inspirational-thought-generator",
-        tech: "jQuery, Grunt, Nodemon",
-        demoLink: "https://inspirationalthoughtgenerator.herokuapp.com/",
+        image: require("../images/itg.jpg"),
+        repolink: "https://github.com/Holgermueller/ITG",
+        tech: "Postcss, javascript",
+        demoLink: "https://holgermueller.github.io/ITG/",
       },
       // {
       //   title: "Friend Finder",
