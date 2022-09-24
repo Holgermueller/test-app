@@ -88,7 +88,7 @@ export default {
   padding: 5%;
 }
 .education-card {
-  width: 55%;
+  width: 65%;
   margin: 1px auto;
 }
 </style>

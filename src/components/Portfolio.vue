@@ -44,7 +44,13 @@
                       <a :href="Project.demoLink" target="_blank" class="demo">
                         <span class="mdi mdi-laptop"> Demo</span>
                       </a>
-                      <v-spacer></v-spacer>
+                    </v-card-actions>
+                    <v-card-actions>
+                      <!-- <a :href="Project.demoLink" target="_blank" class="demo">
+                        <span class="mdi mdi-laptop"> Demo</span>
+                      </a>
+                      <v-spacer></v-spacer> -->
+
                       <a :href="Project.repolink" target="_blank" class="repo">
                         <span class="mdi mdi-github"> Repo</span>
                       </a>
@@ -127,14 +133,14 @@ export default {
         tech: "Postcss, javascript",
         demoLink: "https://holgermueller.github.io/ITG/",
       },
-      // {
-      //   title: "Friend Finder",
-      //   description: "A friend-finding app/ poor-man's dating app.",
-      //   image: require("../images/friendfinder.png"),
-      //   repolink: "https://github.com/Holgermueller/Friend_Finder",
-      //   tech: "Expressjs, Nodemon, jQuery",
-      //   demoLink: "https://friendfinderap.herokuapp.com/",
-      // },
+      {
+        title: "Friend Finder",
+        description: "A friend-finding app/ poor-man's dating app.",
+        image: require("../images/friendfinder.png"),
+        repolink: "https://github.com/Holgermueller/Friend_Finder",
+        tech: "Expressjs, Nodemon, jQuery",
+        demoLink: "https://friend-finder.onrender.com/home",
+      },
     ],
   }),
 };
@@ -212,7 +218,9 @@ export default {
   transform: rotateY(180deg);
   background-color: #f3f3f3;
 }
-
+.v-card__actions {
+  justify-content: center;
+}
 a,
 .demo,
 .repo {
@@ -220,6 +228,8 @@ a,
   margin: 4px;
   color: #000000;
   font-size: 1.5rem;
+  position: relative;
+  text-align: center;
 }
 
 a:hover {
