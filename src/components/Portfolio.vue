@@ -18,27 +18,41 @@
             v-for="(Project, index) in Projects"
             :key="index"
           >
-            <v-hover v-slot:default="{ hover }">
-              <v-card class="project-card" tile :elevation="hover ? 12 : 2">
-                <v-img class="card-image" :src="Project.image"></v-img>
-                <v-card-title>
-                  <div>{{ Project.title }}</div>
-                </v-card-title>
-                <v-card-text>
-                  <p>{{ Project.description }}</p>
-                  <p>Built with: {{ Project.tech }}</p>
-                </v-card-text>
-                <v-card-actions>
-                  <a :href="Project.demoLink" target="_blank" class="demo">
-                    <span class="mdi mdi-laptop-mac"></span>See the demo
-                  </a>
-                  <v-spacer></v-spacer>
-                  <a :href="Project.repolink" target="_blank" class="repo">
-                    <span class="mdi mdi-github"></span>See the repo
-                  </a>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
+            <div class="portfolio-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <v-img
+                    min-height="300"
+                    min-width="300"
+                    class="card-image"
+                    :alt="Project.title"
+                    :src="Project.image"
+                  ></v-img>
+                </div>
+                <div class="card-back">
+                  <v-card elevation="0">
+                    <v-card-title> {{ Project.title }} </v-card-title>
+                    <v-card-text>
+                      <p class="project-description">
+                        {{ Project.description }}
+                      </p>
+                      <p class="project-tools">
+                        Built with: {{ Project.tech }}
+                      </p>
+                    </v-card-text>
+                    <v-card-actions>
+                      <a :href="Project.demoLink" target="_blank" class="demo">
+                        <span class="mdi mdi-laptop"> Demo</span>
+                      </a>
+                      <v-spacer></v-spacer>
+                      <a :href="Project.repolink" target="_blank" class="repo">
+                        <span class="mdi mdi-github"> Repo</span>
+                      </a>
+                    </v-card-actions>
+                  </v-card>
+                </div>
+              </div>
+            </div>
           </v-flex>
         </v-layout>
       </v-container>
@@ -155,26 +169,64 @@ export default {
 }
 .portfolio {
   margin: auto;
-  width: 75%;
+  width: 85%;
 }
-.project-card {
-  margin: 8px;
+.portfolio-card {
+  background-color: transparent;
+  padding: 0;
+  margin: 10px;
+  perspective: 1000px;
+  border: 1px solid #f3f3f3;
+  min-width: 300px;
+  min-height: 300px;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.portfolio-card:hover .card-inner {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card-front {
+  height: 100%;
+  width: 100%;
+  background-color: #bbb;
+  color: black;
 }
 .card-image {
-  height: 250px;
+  height: 100%;
   width: 100%;
 }
-a {
-  text-decoration: none;
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #f3f3f3;
 }
+
+a,
+.demo,
+.repo {
+  text-decoration: none;
+  margin: 4px;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
 a:hover {
   cursor: pointer;
   color: blue;
 }
-.demo,
-.repo {
-  color: black;
-}
+
 @media (min-width: 360px) and (max-width: 450px) {
   .portfolio-container {
     width: 90%;
