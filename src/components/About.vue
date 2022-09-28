@@ -7,10 +7,11 @@
     </div>
 
     <div class="about-content body-1">
-      <p class="about-paragraph">
-        I'm a full-stack front-end developer living in Batesville, Arkansas.
+      <p class="about-paragraph hidden">
+        I'm a full-stack web developer living in Batesville, Arkansas.
       </p>
-      <p class="about-paragraph">
+
+      <p class="about-paragraph hidden">
         Originally from Upstate New York, I moved to Batesville, Arkansas
         halfway through 2022 so my wife could pursue her dream job, working at a
         small liberal arts college. Prior to Arkansas, I lived in Minneapolis,
@@ -22,7 +23,7 @@
         projects is to break the overall task into the smallest manageable
         pieces and build up from there.
       </p>
-      <p class="about-paragraph">
+      <p class="about-paragraph hidden">
         When not coding, I enjoy reading and writing, watching movies, hiking,
         and travelling. One of my longshot dreams is to visit every country on
         the planet. Some of my bucket-list destinations are Japan, New Zealand,
@@ -36,6 +37,31 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "AboutPage",
+
+  data: () => ({
+    observer: null,
+  }),
+
+  mounted() {
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => this.observer.observe(el));
+  },
+};
+</script>
 
 <style scoped>
 .about {
@@ -67,13 +93,33 @@
   letter-spacing: 10px;
 }
 .about-content {
-  margin: 7% auto;
+  display: grid;
+  place-items: center;
+  align-content: center;
 }
 .about-paragraph {
   text-align: justify;
   text-justify: inter-word;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 4% 10%;
   font-size: 1.125rem;
+}
+.about-paragraph:first-child {
+  margin-top: 12%;
+}
+.about-content:last-child {
+  margin-bottom: 4%;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 </style>

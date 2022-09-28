@@ -100,7 +100,7 @@ export default {
       {
         title: "Vue Wishlist",
         description:
-          "Vue front-end and cloud firestore back-end. CRUD application. Gives users an alternative to using Amazon's wishlist as a way of tracking items they'd like to purchase, or have someone purchase for them.",
+          "Vue and cloud firestore CRUD application. Gives users an alternative to a major e-commerce site's wish list feature.",
         image: require("../images/wishList.png"),
         repolink: "https://github.com/Holgermueller/wish-list",
         tech: "Vue, Vuex, Vuetify, Cloud Firestore",
@@ -109,7 +109,7 @@ export default {
       {
         title: "Story-Idea Generator",
         description:
-          "Single page application that helps stumped writers come up with their next best seller",
+          "Single page application that helps stumped writers create their next best-seller.",
         image: require("../images/storyIdeaGenerator.png"),
         repolink: "https://github.com/Holgermueller/story-idea-generator",
         tech: "Gatsby, Material-Ui",
@@ -127,7 +127,7 @@ export default {
       {
         title: "ITG",
         description:
-          "An app that gives users words of widsom to get them through the day. Thoughts can be shared on Twitter.",
+          "An app that gives users words of widsom to get them through the day. The wisdom can be shared on Twitter.",
         image: require("../images/itg.jpg"),
         repolink: "https://github.com/Holgermueller/ITG",
         tech: "Postcss, javascript",
