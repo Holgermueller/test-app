@@ -8,7 +8,7 @@
 
     <div class="about-content body-1">
       <p class="about-paragraph hidden">
-        I'm a full-stack web developer living in Batesville, Arkansas.
+        I'm a designer and web developer living in Batesville, Arkansas.
       </p>
 
       <p class="about-paragraph hidden">
@@ -33,6 +33,11 @@
         I've always had an affinty for Marvel Comics. With movies, I tend to
         enjoy comedies over other genres. And with music, I'm fond of many
         genres, but jazz and punk rock tend to be my favorites.
+      </p>
+
+      <p class="about-paragraph hidden">
+        And yes, I realize that first paragraph and this one (depending on the
+        screen size) are centered while the others aren't. I like it that way.
       </p>
     </div>
   </div>
@@ -121,5 +126,11 @@ export default {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
 </style>

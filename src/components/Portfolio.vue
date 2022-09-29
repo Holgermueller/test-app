@@ -183,6 +183,7 @@ export default {
   margin: 10px;
   perspective: 1000px;
   border: 1px solid #f3f3f3;
+  border-radius: 5px;
   min-width: 300px;
   min-height: 300px;
 }
@@ -192,6 +193,7 @@ export default {
   height: 100%;
   transition: transform 1s;
   transform-style: preserve-3d;
+  border-radius: 5px;
 }
 .portfolio-card:hover .card-inner {
   transform: rotateY(180deg);
@@ -203,6 +205,7 @@ export default {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 5px;
 }
 .card-front {
   height: 100%;

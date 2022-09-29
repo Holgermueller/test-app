@@ -23,6 +23,7 @@
             :href="link.link"
             target="_blank"
             class="link"
+            :class="link.name"
             elevation="0"
             fab
             x-large
@@ -47,7 +48,7 @@ export default {
         icon: "mdi mdi-github",
       },
       {
-        name: "Stack Overflow",
+        name: "Stack-Overflow",
         link: "https://stackoverflow.com/users/9111512/holger-mueller?tab=profile",
         icon: "mdi mdi-stack-overflow",
       },
@@ -105,7 +106,7 @@ export default {
 }
 .link:hover {
   cursor: pointer;
-  color: white;
+  color: #f7f9fb;
   background-color: #31708e;
 }
 .name,
@@ -114,6 +115,39 @@ export default {
   color: #31708e;
   background-color: #f7f9fb;
 }
+
+.Github {
+  animation: glow 2s 1 2s;
+}
+
+.Stack-Overflow {
+  animation: glow 2s 1 3s;
+}
+.LinkedIn {
+  animation: glow 2s 1 4s;
+}
+.Resume {
+  animation: glow 2s 1 5s;
+}
+.Email {
+  animation: glow 2s 1 6s;
+}
+
+@keyframes glow {
+  0% {
+    color: #31708e;
+    background-color: #f7f9fb;
+  }
+  50% {
+    color: #f7f9fb;
+    background-color: #31708e;
+  }
+  100% {
+    color: #31708e;
+    background-color: #f7f9fb;
+  }
+}
+
 @media (min-width: 360px) and (max-width: 450px) {
   .links {
     width: 50%;

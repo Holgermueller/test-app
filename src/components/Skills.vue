@@ -92,6 +92,7 @@ export default {
       "Vuetify",
       "MaterialUI",
       "Bootstrap",
+      "Postcss",
     ],
     backendItems: [
       "MongoDB",
