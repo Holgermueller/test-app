@@ -107,13 +107,13 @@ export default {
         demoLink: "https://less-wish-list.web.app/dashboard",
       },
       {
-        title: "Story-Idea Generator",
+        title: "Story-Idea Generator Mark 2",
         description:
-          "Single page application that helps stumped writers create their next best-seller.",
-        image: require("../images/storyIdeaGenerator.png"),
-        repolink: "https://github.com/Holgermueller/story-idea-generator",
-        tech: "Gatsby, Material-Ui",
-        demoLink: "https://holgermueller.github.io/story-idea-generator/",
+          "Updated single page application that helps stumped writers create their next best-seller.",
+        image: require("../images/sigmkii.png"),
+        repolink: "https://github.com/Holgermueller/SIGMK2",
+        tech: "Vanills JS, Plain CSS, PostCSS",
+        demoLink: "https://holgermueller.github.io/SIGMK2/",
       },
       {
         title: "Weather App",

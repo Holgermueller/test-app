@@ -8,7 +8,9 @@
 
     <div class="about-content body-1">
       <p class="about-paragraph hidden">
-        I'm a designer and web developer living in Batesville, Arkansas.
+        I'm a designer and web developer living in Batesville, Arkansas. I like
+        art and tech, and I like to bring them together in an attempt to make
+        cool-looking things.
       </p>
 
       <p class="about-paragraph hidden">
@@ -19,9 +21,13 @@
         earned my full-stack web developer certificate through the University of
         Minnesota's College of Continuing Education. Through that program, I've
         become proficient in Javascript, jQuery, React, VueJs, Google's Cloud
-        Firebase, MongoDB, and a few other technologies. My plan of attack on
-        projects is to break the overall task into the smallest manageable
-        pieces and build up from there.
+        Firebase, MongoDB, and a few other technologies. Currently, I'm dipping
+        my toes into Python, mainly because it has the coolest name of all the
+        programming languages; it has nothing to do with building an AI that
+        will help me take over the world. My plan of attack on projects is to
+        break the overall task into the smallest manageable pieces and build up
+        from there. And I'm happiest when solutions can be accomplished with
+        just a line or two of code.
       </p>
       <p class="about-paragraph hidden">
         When not coding, I enjoy reading and writing, watching movies, hiking,
@@ -35,10 +41,10 @@
         genres, but jazz and punk rock tend to be my favorites.
       </p>
 
-      <p class="about-paragraph hidden">
+      <!-- <p class="about-paragraph hidden">
         And yes, I realize that first paragraph and this one (depending on the
         screen size) are centered while the others aren't. I like it that way.
-      </p>
+      </p> -->
     </div>
   </div>
 </template>
