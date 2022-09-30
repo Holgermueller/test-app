@@ -15,7 +15,11 @@
       <v-spacer></v-spacer>
 
       <div v-for="(section, index) in sections" :key="index">
-        <v-btn :id="index" :href="section.link" text>
+        <v-btn
+          :id="section.link"
+          @click.prevent="scrollToSection(section)"
+          text
+        >
           <span class="mr-2"> {{ section.title }}</span>
         </v-btn>
       </div>
@@ -29,7 +33,7 @@
       temporary
     >
       <v-list nav dense>
-        <v-list-item class="close" @click="drawer = !drawer" dark>
+        <v-list-item class="close" @click.prevent="drawer = !drawer" dark>
           <v-icon x-large>mdi-close</v-icon>
         </v-list-item>
 
@@ -40,14 +44,13 @@
           dark
           link
         >
-          <v-btn :href="section.link" text>
+          <v-btn
+            :id="section.link"
+            @click.prevent="scrollToSection(section)"
+            text
+          >
             <span class="white--text headline"> {{ section.title }} </span>
           </v-btn>
-          <!-- <v-list-item-content>
-            <v-list-item-title>
-              <span class="white--text headline"> {{ section.title }} </span>
-            </v-list-item-title>
-          </v-list-item-content> -->
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -76,31 +79,37 @@ export default {
     sections: [
       {
         title: "About",
-        icon: "mdi mdi-book-open-page-variant",
         link: "#About",
       },
-      { title: "Skills", icon: "mdi mdi-arrow-up", link: "#Skills" },
-      { title: "Portfolio", icon: "mdi mdi-iframe", link: "#Portfolio" },
-
+      { title: "Skills", link: "#Skills" },
+      { title: "Portfolio", link: "#Portfolio" },
       {
         title: "Education",
-        icon: "",
         link: "#Education",
       },
-      { title: "Connect", icon: "mdi mdi-laptop-mac", link: "#Connect" },
+      { title: "Connect", link: "#Connect" },
     ],
   }),
 
   methods: {
     scrollToTop() {
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+
+    scrollToSection(section) {
+      const position = this.$el.querySelector(section.link).offsetTop;
+
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: position, behavior: "smooth" });
+      });
     },
   },
 };
 </script>
 
 <style scoped>
-.brand:hover {
+.brand:hover,
+a:hover {
   cursor: pointer;
 }
 

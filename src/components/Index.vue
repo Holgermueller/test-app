@@ -2,7 +2,6 @@
   <div id="home">
     <Banner />
     <About />
-
     <Skills />
     <Portfolio />
     <Education />
