@@ -113,6 +113,7 @@ export default {
   text-justify: inter-word;
   margin: 4% 10%;
   font-size: 1.125rem;
+  color: #080808;
 }
 .about-paragraph:first-child {
   margin-top: 12%;

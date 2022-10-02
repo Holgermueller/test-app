@@ -130,6 +130,9 @@ export default {
   width: 65%;
   margin: 4px auto;
 }
+.title {
+  color: #080808;
+}
 
 .hidden-left {
   opacity: 0;

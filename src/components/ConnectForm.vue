@@ -80,10 +80,15 @@ export default {
 .button {
   margin-bottom: 10px;
 }
+label {
+  color: #080808;
+}
 input[type="text"],
 input[type="email"],
 textarea {
   background-color: white;
+  color: #080808;
+  font-size: 1.25rem;
 }
 .form-field {
   width: 100%;
@@ -111,7 +116,7 @@ textarea {
 }
 .submit:disabled {
   background-color: lightgrey;
-  color: lightgray;
+  color: #080808;
 }
 a {
   text-decoration: none;

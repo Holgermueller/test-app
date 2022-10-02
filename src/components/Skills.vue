@@ -148,4 +148,8 @@ ul {
   list-style: none;
   margin-top: 8px;
 }
+
+li {
+  color: #080808;
+}
 </style>

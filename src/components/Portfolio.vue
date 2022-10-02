@@ -100,14 +100,14 @@ export default {
       {
         title: "Vue Wishlist",
         description:
-          "Vue and cloud firestore CRUD application. Gives users an alternative to a major e-commerce site's wish list feature.",
+          "Vue and cloud firestore CRUD alternative to a major e-commerce site's wish list feature.",
         image: require("../images/wishList.png"),
         repolink: "https://github.com/Holgermueller/wish-list",
         tech: "Vue, Vuex, Vuetify, Cloud Firestore",
         demoLink: "https://less-wish-list.web.app/dashboard",
       },
       {
-        title: "Story-Idea Generator Mark 2",
+        title: "Story-Idea-Generator Mark 2",
         description:
           "Updated single page application that helps stumped writers create their next best-seller.",
         image: require("../images/sigmkii.png"),
@@ -186,6 +186,7 @@ export default {
   border-radius: 5px;
   min-width: 300px;
   min-height: 300px;
+  color: #080808;
 }
 .card-inner {
   position: relative;
@@ -224,6 +225,11 @@ export default {
 .v-card__actions {
   justify-content: center;
 }
+.project-description,
+.project-tools {
+  color: #080808;
+}
+
 a,
 .demo,
 .repo {
