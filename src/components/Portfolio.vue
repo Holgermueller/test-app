@@ -73,6 +73,15 @@ export default {
   data: () => ({
     Projects: [
       {
+        title: "UX/UI Portfolio",
+        description:
+          "Showcases my understanding of the UX/UI design process from beginning to end.",
+        image: require("../images/uxuiport.png"),
+        repolink: "https://github.com/Holgermueller/uxuiportfolio",
+        tech: "NuxtJS, Vuetify",
+        demoLink: "https://holgermueller.github.io/uxuiportfolio/",
+      },
+      {
         title: "QR Coder",
         description: "A static app that generates downloadable qr codes.",
         image: require("../images/qrcode.png"),

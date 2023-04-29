@@ -34,7 +34,12 @@ export default {
     education: [
       {
         school: "Google",
-        program: "UX Design Certificate",
+        program: "IT Support Specialization Certificate",
+        class: "hidden-left",
+      },
+      {
+        school: "Google",
+        program: "UX/UI Design Certificate",
         class: "hidden-right",
       },
       {
