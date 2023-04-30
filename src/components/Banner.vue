@@ -24,6 +24,7 @@
             target="_blank"
             class="link"
             :class="link.name"
+            :title="link.title"
             elevation="0"
             fab
             x-large
@@ -46,26 +47,31 @@ export default {
         name: "Github",
         link: "https://github.com/Holgermueller",
         icon: "mdi mdi-github",
+        title: "Github",
       },
       {
         name: "Stack-Overflow",
         link: "https://stackoverflow.com/users/9111512/holger-mueller?tab=profile",
         icon: "mdi mdi-stack-overflow",
+        title: "Stack Overflow",
       },
       {
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/holger-mueller-75855114a/",
         icon: "mdi mdi-linkedin",
+        title: "LinkedIn",
       },
       {
         name: "Resume",
         link: "https://holgermueller.github.io/Resume/",
         icon: "mdi mdi-file",
+        title: "My Resume",
       },
       {
         name: "Email",
         link: "mailto:9jholger@gmail.com",
         icon: "mdi mdi-email",
+        title: "Email me!",
       },
     ],
   }),
