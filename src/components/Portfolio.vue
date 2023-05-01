@@ -134,6 +134,15 @@ export default {
         demoLink: "https://holgermueller.github.io/SIGMK2/",
       },
       {
+        title: "To Do Crawl",
+        description:
+          "Frontend to-do list application with a crawl thrown in for a little something extra",
+        image: require("../images/todocrawl.png"),
+        repolink: "https://github.com/Holgermueller/todocrawl",
+        tech: "ReactJS, Redux",
+        demoLink: "https://holgermueller.github.io/todocrawl/",
+      },
+      {
         title: "Weather App",
         description:
           "A mobile responsive weather app with location search, which meets accessability standards.",
