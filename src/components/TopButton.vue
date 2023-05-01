@@ -7,6 +7,7 @@
       v-show="button"
       button
       color="primary"
+      title="Back to Top"
       bottom
       right
       fixed

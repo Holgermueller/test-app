@@ -9,8 +9,8 @@
     <div class="about-content body-1">
       <p class="about-paragraph hidden">
         I'm a designer and web developer living in Batesville, Arkansas. I like
-        art and tech, and I like to bring them together in an attempt to make
-        cool-looking things.
+        art and tech, and I like to bring them together to make cool-looking
+        things.
       </p>
 
       <p class="about-paragraph hidden">

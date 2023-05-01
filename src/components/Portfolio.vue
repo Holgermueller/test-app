@@ -73,6 +73,15 @@ export default {
   data: () => ({
     Projects: [
       {
+        title: "CSS Playground",
+        description:
+          "A place to store code that I can later reference for future projects.",
+        image: require("../images/cssplayground.png"),
+        repolink: "https://github.com/Holgermueller/cssplayground",
+        tech: "HTML, CSS, PostCSS, a little JS",
+        demoLink: "https://holgermueller.github.io/cssplayground/",
+      },
+      {
         title: "UX/UI Portfolio",
         description:
           "Showcases my understanding of the UX/UI design process from beginning to end.",
