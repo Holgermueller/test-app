@@ -143,6 +143,14 @@ export default {
         demoLink: "https://holgermueller.github.io/todocrawl/",
       },
       {
+        title: "AI Eightball",
+        description: "A contemporary take on a classic toy",
+        image: require("../images/aie.png"),
+        repolink: "https://github.com/Holgermueller/AIEightball",
+        tech: "HTML, CSS, PostCSS",
+        demoLink: "https://holgermueller.github.io/AIEightball/",
+      },
+      {
         title: "Weather App",
         description:
           "A mobile responsive weather app with location search, which meets accessability standards.",
