@@ -20,6 +20,7 @@
       <v-card-actions class="links">
         <div class="social-links" v-for="(link, index) in links" :key="index">
           <v-btn
+            :name="link.attributeName"
             :href="link.link"
             target="_blank"
             class="link"
@@ -48,30 +49,35 @@ export default {
         link: "https://github.com/Holgermueller",
         icon: "mdi mdi-github",
         title: "Github",
+        attributeName: "social-link",
       },
       {
         name: "Stack-Overflow",
         link: "https://stackoverflow.com/users/9111512/holger-mueller?tab=profile",
         icon: "mdi mdi-stack-overflow",
         title: "Stack Overflow",
+        attributeName: "social-link",
       },
       {
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/holger-mueller-75855114a/",
         icon: "mdi mdi-linkedin",
         title: "LinkedIn",
+        attributeName: "social-link",
       },
       {
         name: "Resume",
         link: "https://holgermueller.github.io/Resume/",
         icon: "mdi mdi-file",
         title: "My Resume",
+        attributeName: "resume-link",
       },
       {
         name: "Email",
         link: "mailto:9jholger@gmail.com",
         icon: "mdi mdi-email",
         title: "Email me!",
+        attributeName: "email-link",
       },
     ],
   }),
@@ -92,6 +98,7 @@ export default {
 .pic {
   margin-top: 2rem;
   object-fit: cover;
+  border-radius: 15px;
 }
 .name {
   padding: 2%;

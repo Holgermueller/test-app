@@ -40,6 +40,7 @@
             </label>
             <!-- your other form fields go here -->
             <button
+              name="submit"
               type="submit"
               class="submit"
               :disabled="Name === '' || Email === '' || Message === ''"

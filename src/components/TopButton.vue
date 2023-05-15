@@ -1,6 +1,7 @@
 <template>
   <div id="topButton">
     <v-btn
+      name="scroll-to-top"
       id="button"
       @click="scrollToTop"
       v-scroll="onScroll"
