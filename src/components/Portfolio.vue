@@ -42,7 +42,7 @@
                     </v-card-text>
                     <v-card-actions>
                       <a :href="Project.demoLink" target="_blank" class="demo">
-                        <span class="mdi mdi-laptop"> Demo</span>
+                        <span class="mdi mdi-laptop"> Live site/app</span>
                       </a>
                     </v-card-actions>
                     <v-card-actions>
@@ -72,6 +72,15 @@ export default {
 
   data: () => ({
     Projects: [
+      {
+        title: "Community Justice Investigations",
+        description:
+          "A website I built for the Community Justice Investigations non-profit organization.",
+        image: require("../images/cji.png"),
+        repolink: "https://github.com/Holgermueller/cji",
+        tech: "Wordpress",
+        demoLink: "https://communityjusticeinvestigations.org/",
+      },
       {
         title: "CSS Playground",
         description:
