@@ -93,6 +93,7 @@ export default {
       "MaterialUI",
       "Bootstrap",
       "Postcss",
+      "Wordpress",
     ],
     backendItems: [
       "MongoDB",
