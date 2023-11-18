@@ -82,6 +82,15 @@ export default {
         demoLink: "https://communityjusticeinvestigations.org/",
       },
       {
+        title: "Writing Apps",
+        description:
+          "Some apps I built to help with one of my hobbies, and who off some front-end skills",
+        image: require("../images/writingapps.png"),
+        repolink: "https://github.com/Holgermueller/writingapps",
+        tech: "PostCSS, HTML, CSS, JS",
+        demoLink: "https://holgermueller.github.io/writingapps/",
+      },
+      {
         title: "CSS Playground",
         description:
           "A place to store code that I can later reference for future projects.",
