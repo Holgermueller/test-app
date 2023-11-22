@@ -3,6 +3,7 @@
     <Banner />
     <About />
     <Skills />
+    <Experience />
     <Portfolio />
     <Education />
     <Connect />
@@ -13,6 +14,7 @@
 <script>
 import Banner from "./Banner.vue";
 import About from "./About.vue";
+import Experience from "./Experience.vue";
 import Portfolio from "./Portfolio.vue";
 import Skills from "./Skills.vue";
 import Education from "./Education.vue";
@@ -25,6 +27,7 @@ export default {
   components: {
     Banner,
     About,
+    Experience,
     Portfolio,
     Skills,
     Education,

@@ -82,6 +82,7 @@ export default {
         link: "#About",
       },
       { title: "Skills", link: "#Skills" },
+      { title: "Experience", link: "#Experience" },
       { title: "Portfolio", link: "#Portfolio" },
       {
         title: "Education",

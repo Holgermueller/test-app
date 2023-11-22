@@ -73,15 +73,6 @@ export default {
   data: () => ({
     Projects: [
       {
-        title: "Community Justice Investigations",
-        description:
-          "A website I built for the Community Justice Investigations non-profit organization.",
-        image: require("../images/cji.png"),
-        repolink: "https://github.com/Holgermueller/cji",
-        tech: "Wordpress",
-        demoLink: "https://communityjusticeinvestigations.org/",
-      },
-      {
         title: "Writing Apps",
         description:
           "Some apps I built to help with one of my hobbies, and who off some front-end skills",

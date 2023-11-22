@@ -23,9 +23,13 @@
   background-color: #31708e !important;
   color: white;
   padding: 4px;
+  text-align: center;
 }
 .link {
   text-decoration: none;
+  color: white;
+}
+.caption {
   color: white;
 }
 </style>

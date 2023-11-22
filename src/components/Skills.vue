@@ -14,7 +14,7 @@
               <v-flex xs12 sm12 md6 lg4 xl4>
                 <v-card elevation="0">
                   <v-card-title>
-                    <h1>UX/UI</h1>
+                    <h1>UX/UI Design</h1>
                   </v-card-title>
                   <v-card-text>
                     <hr />
