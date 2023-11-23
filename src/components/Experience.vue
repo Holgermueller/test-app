@@ -12,19 +12,29 @@
           <v-flex
             xs12
             sm12
-            md6
-            lg4
-            xl4
+            md12
+            lg12
+            xl12
             v-for="(Job, index) in Jobs"
             :key="index"
           >
-            <div class="experience-card">
-              <v-img
-                class="card-image"
-                :alt="Job.title"
-                :src="Job.image"
-              ></v-img>
-            </div>
+            <v-card class="" :class="{ 'on-hover': hover }">
+              <v-img class="card-image" :alt="Job.title" :src="Job.image">
+              </v-img>
+
+              <v-dialog v-model="dialog" width="500">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn v-bind="attrs" v-on="on"> MORE </v-btn>
+                </template>
+
+                <v-card>
+                  <v-card-text> LOREM IPSUM </v-card-text>
+                  <v-card-actions>
+                    <v-btn @click="dialog = false">CLOSE</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-dialog>
+            </v-card>
           </v-flex>
         </v-layout>
       </v-container>
@@ -37,6 +47,8 @@ export default {
   name: "Experience",
 
   data: () => ({
+    overlay: false,
+    dialog: false,
     Jobs: [
       {
         title: "Community Justice Investigations",
