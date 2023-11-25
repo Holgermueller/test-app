@@ -19,8 +19,8 @@
               </v-img>
 
               <div id="overlay">
-                <v-card>
-                  <v-card-title>
+                <v-card class="data-card" width="500">
+                  <v-card-title class="justify-center">
                     {{ Job.title }}
                   </v-card-title>
                   <v-card-subtitle class="timeline">
@@ -33,18 +33,16 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-btn
-                      block
                       elevation="0"
                       :href="Job.repolink"
                       target="_blank"
                       color="#31708e"
                       class="white--text"
                       x-large
-                      >Repo</v-btn
+                      >See the Repo</v-btn
                     >
-
+                    <v-spacer></v-spacer>
                     <v-btn
-                      block
                       elevation="0"
                       :href="Job.demoLink"
                       target="_blank"
@@ -139,7 +137,7 @@ export default {
           "A site I built for the ICLFF, a 501(c)(3) nonprofit in Batesville, AR.",
         image: require("../images/iclff.png"),
         repolink: "https://github.com/Holgermueller/ICLFF",
-        tech: "Wordpress, Elementor",
+        tech: "Wordpress, Elementor, Hostinger",
         demoLink: "https://independencecountylibraryfriendsfoundation.com/",
       },
       {
@@ -222,14 +220,13 @@ export default {
   opacity: 0;
   color: white;
   text-align: center;
+  display: grid;
+  place-items: center;
+  align-content: center;
 }
 
 .experience-card:hover #overlay {
   opacity: 1;
-}
-
-.info-button {
-  top: 45%;
 }
 
 .timeline {
