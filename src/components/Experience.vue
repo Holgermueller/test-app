@@ -9,16 +9,12 @@
     <div class="experience-container">
       <v-container class="experience" fluid>
         <v-layout row wrap>
-          <v-flex
-            xs12
-            sm12
-            md12
-            lg12
-            xl12
-            v-for="(Job, index) in Jobs"
-            :key="index"
-          >
-            <v-card class="experience-card">
+          <v-flex xs12 sm12 md12 lg12 xl12>
+            <v-card
+              class="experience-card"
+              v-for="(Job, index) in Jobs"
+              :key="index"
+            >
               <v-img class="card-image" :alt="Job.title" :src="Job.image">
               </v-img>
 
@@ -99,6 +95,26 @@ export default {
     dialog: false,
     Jobs: [
       {
+        title: "Independence County Library Friends Foundation",
+        time: "Oct. 2023 - Current",
+        description:
+          "A site I built for the ICLFF, a 501(c)(3) nonprofit in Batesville, AR.",
+        image: require("../images/iclff.png"),
+        repolink: "https://github.com/Holgermueller/ICLFF",
+        tech: "Wordpress, Elementor",
+        demoLink: "https://independencecountylibraryfriendsfoundation.com/",
+      },
+      {
+        title: "Western Massachusetts Policy Center",
+        time: "Aug. 2023 - Current",
+        description:
+          "Since the site was already up and running, I was asked to make a few changes to this site.",
+        image: require("../images/wmpc.png"),
+        repolink: "https://github.com/Holgermueller/wmpc",
+        tech: "Wordpress, Elementor Pro",
+        demoLink: "https://wmpolicy.org/",
+      },
+      {
         title: "Community Justice Investigations",
         time: "Aug. 2023 - Oct. 2023",
         description:
@@ -149,6 +165,7 @@ export default {
 
 .experience-card {
   position: relative;
+  margin: 4px 0;
 }
 
 #overlay {
