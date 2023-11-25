@@ -19,7 +19,44 @@
               </v-img>
 
               <div id="overlay">
-                <v-dialog v-model="dialog" width="500">
+                <v-card>
+                  <v-card-title>
+                    {{ Job.title }}
+                  </v-card-title>
+                  <v-card-subtitle class="timeline">
+                    Timeline: {{ Job.time }}
+                  </v-card-subtitle>
+                  <v-card-text>
+                    <p class="description">{{ Job.description }}</p>
+                    <p class="description">Tech used: {{ Job.tech }}</p>
+                    <p class="description">For more info:</p>
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-btn
+                      block
+                      elevation="0"
+                      :href="Job.repolink"
+                      target="_blank"
+                      color="#31708e"
+                      class="white--text"
+                      x-large
+                      >Repo</v-btn
+                    >
+
+                    <v-btn
+                      block
+                      elevation="0"
+                      :href="Job.demoLink"
+                      target="_blank"
+                      x-large
+                      color="#31708e"
+                      class="white--text"
+                      >See the Site</v-btn
+                    >
+                  </v-card-actions>
+                </v-card>
+
+                <!-- <v-dialog v-model="dialog" width="500">
                   <template v-slot:activator="{ on, attrs }">
                     <v-btn
                       class="info-button white--text"
@@ -37,15 +74,17 @@
                     <v-card-title>
                       {{ Job.title }}
                     </v-card-title>
-                    <v-card-subtitle class="timeline">
+                  </v-card> -->
+
+                <!-- <v-card-subtitle class="timeline">
                       Timeline: {{ Job.time }}
                     </v-card-subtitle>
                     <v-card-text>
                       <p class="description">{{ Job.description }}</p>
                       <p class="description">Tech used: {{ Job.tech }}</p>
                       <p class="description">For more info:</p>
-                    </v-card-text>
-                    <v-card-actions>
+                    </v-card-text> -->
+                <!-- <v-card-actions>
                       <v-btn
                         elevation="0"
                         :href="Job.repolink"
@@ -74,9 +113,8 @@
                         class="white--text"
                         >See the Site</v-btn
                       >
-                    </v-card-actions>
-                  </v-card>
-                </v-dialog>
+                    </v-card-actions> -->
+                <!-- </v-dialog> -->
               </div>
             </v-card>
           </v-flex>
@@ -166,6 +204,10 @@ export default {
 .experience-card {
   position: relative;
   margin: 4px 0;
+}
+
+.card-image {
+  border-radius: 5px;
 }
 
 #overlay {
