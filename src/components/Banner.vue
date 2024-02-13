@@ -14,7 +14,7 @@
 
         <div class="name display-4">Holger Mueller</div>
         <div class="description title">
-          UX/UI Designer | Full-stack Developer | JAMstacker
+          UX/UI Designer | Front End Developer | JAMstacker
         </div>
       </v-card-text>
       <v-card-actions class="links">

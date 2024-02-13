@@ -73,6 +73,14 @@ export default {
   data: () => ({
     Projects: [
       {
+        title: "Wedding Invitation",
+        description: "A wedding invitation template.",
+        image: require("../images/weddinginvite.png"),
+        repolink: "https://github.com/Holgermueller/wedding-invitation-email",
+        tech: "HTML, CSS",
+        demoLink: "https://holgermueller.github.io/wedding-invitation-email/",
+      },
+      {
         title: "Writing Apps",
         description:
           "Some apps I built to help with one of my hobbies, and who off some front-end skills",
@@ -81,24 +89,16 @@ export default {
         tech: "PostCSS, HTML, CSS, JS",
         demoLink: "https://holgermueller.github.io/writingapps/",
       },
-      {
-        title: "CSS Playground",
-        description:
-          "A place to store code that I can later reference for future projects.",
-        image: require("../images/cssplayground.png"),
-        repolink: "https://github.com/Holgermueller/cssplayground",
-        tech: "HTML, CSS, PostCSS, a little JS",
-        demoLink: "https://holgermueller.github.io/cssplayground/",
-      },
-      {
-        title: "UX/UI Portfolio",
-        description:
-          "Showcases my understanding of the UX/UI design process from beginning to end.",
-        image: require("../images/uxuiport.png"),
-        repolink: "https://github.com/Holgermueller/uxuiportfolio",
-        tech: "NuxtJS, Vuetify",
-        demoLink: "https://holgermueller.github.io/uxuiportfolio/",
-      },
+      // {
+      //   title: "CSS Playground",
+      //   description:
+      //     "A place to store code that I can later reference for future projects.",
+      //   image: require("../images/cssplayground.png"),
+      //   repolink: "https://github.com/Holgermueller/cssplayground",
+      //   tech: "HTML, CSS, PostCSS, a little JS",
+      //   demoLink: "https://holgermueller.github.io/cssplayground/",
+      // },
+
       {
         title: "QR Coder",
         description: "A static app that generates downloadable qr codes.",
@@ -107,14 +107,7 @@ export default {
         tech: "Vanills JS, Bootstrap, Three JS, QRCode.js",
         demoLink: "https://holgermueller.github.io/qrcoder/",
       },
-      {
-        title: "Trip Scheduler",
-        description: "A way to keep track of any upcoming getaways.",
-        image: require("../images/scheduler.png"),
-        repolink: "https://github.com/Holgermueller/vue-train-scheduler",
-        tech: "Vue, Vuex, Vuetify, Cloud Firestore",
-        demoLink: "https://moodtracker-db661.web.app/?redirect=%2Fdashboard",
-      },
+
       {
         title: "Hours Tracker",
         description:
